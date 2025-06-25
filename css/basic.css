@@ -281,6 +281,12 @@ body.scroll_hidden {
 	z-index: 11;
 }
 
+/* Hide only the middle vertical lines (columns 2, 3, and 4) */
+.lines .line-col:nth-child(3):before,
+.lines .line-col:nth-child(4):before {
+    display: none;
+}
+
 .wrapper {
 	position: relative;
 }
@@ -1021,3 +1027,5 @@ blockquote {
 		top: 0px;
 	}
 }
+
+
